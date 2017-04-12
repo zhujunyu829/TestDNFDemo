@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  DBManger+main.m
 //  DNFDemo
 //
 //  Created by ZhuJunyu on 2017/4/12.
 //  Copyright © 2017年 ZhuJunyu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DBManger+main.h"
 
-@interface ViewController : UIViewController
-
+@implementation DBManger (main)
 
 @end
-
