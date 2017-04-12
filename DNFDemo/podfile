@@ -1,0 +1,7 @@
+
+platform :ios,'8.0'
+target "DNFDemo" do
+pod 'FMDB'
+pod 'Masonry'
+
+end
