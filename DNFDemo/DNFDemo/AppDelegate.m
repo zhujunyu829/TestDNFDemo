@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MainViewController.h"
+#import "TabMainViewController.h"
+#import "DBManger.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +20,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSLog(@"测试");
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [TabMainViewController new];//[[UINavigationController alloc] initWithRootViewController:[MainViewController new]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    [DBManger cheakDB];
     return YES;
 }
 

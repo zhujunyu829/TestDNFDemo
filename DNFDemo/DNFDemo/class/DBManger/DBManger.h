@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FMDB.h"
 
 @interface DBManger : NSObject
 
@@ -20,6 +21,6 @@
 /**
  数据库检查与更新
  */
-- (void)cheakDB;
++ (void)cheakDB;
 
 @end

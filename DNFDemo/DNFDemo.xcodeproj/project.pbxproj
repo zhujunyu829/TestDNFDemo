@@ -17,6 +17,14 @@
 		D020EF6E1E9E131C00FDE5E3 /* DNFDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D020EF6D1E9E131C00FDE5E3 /* DNFDemoUITests.m */; };
 		D020EF8B1E9E2EFF00FDE5E3 /* DBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = D020EF8A1E9E2EFF00FDE5E3 /* DBManger.m */; };
 		D020EF8E1E9E2FCE00FDE5E3 /* DBManger+main.m in Sources */ = {isa = PBXBuildFile; fileRef = D020EF8D1E9E2FCE00FDE5E3 /* DBManger+main.m */; };
+		D093B3001EA4BD1B008CE3AD /* TabMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D093B2FF1EA4BD1B008CE3AD /* TabMainViewController.m */; };
+		D093B3051EA4BED1008CE3AD /* SalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D093B3041EA4BED1008CE3AD /* SalseViewController.m */; };
+		D093B30A1EA4BFFF008CE3AD /* AnalyseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D093B3091EA4BFFF008CE3AD /* AnalyseViewController.m */; };
+		D0C5DC001E9F7E1E0047B9A1 /* GoodsRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C5DBFF1E9F7E1E0047B9A1 /* GoodsRecordModel.m */; };
+		D0E791511E9F70E900B2E6CB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E791501E9F70E900B2E6CB /* MainViewController.m */; };
+		D0E791591E9F727E00B2E6CB /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E791581E9F727E00B2E6CB /* Model.m */; };
+		D0E7915C1E9F72EF00B2E6CB /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7915B1E9F72EF00B2E6CB /* GoodsModel.m */; };
+		D0E7915F1E9F771C00B2E6CB /* ChooseGoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E7915E1E9F771C00B2E6CB /* ChooseGoodsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +71,22 @@
 		D020EF8A1E9E2EFF00FDE5E3 /* DBManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManger.m; sourceTree = "<group>"; };
 		D020EF8C1E9E2FCE00FDE5E3 /* DBManger+main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBManger+main.h"; sourceTree = "<group>"; };
 		D020EF8D1E9E2FCE00FDE5E3 /* DBManger+main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DBManger+main.m"; sourceTree = "<group>"; };
+		D093B2FE1EA4BD1B008CE3AD /* TabMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabMainViewController.h; sourceTree = "<group>"; };
+		D093B2FF1EA4BD1B008CE3AD /* TabMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabMainViewController.m; sourceTree = "<group>"; };
+		D093B3031EA4BED1008CE3AD /* SalseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalseViewController.h; sourceTree = "<group>"; };
+		D093B3041EA4BED1008CE3AD /* SalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalseViewController.m; sourceTree = "<group>"; };
+		D093B3081EA4BFFF008CE3AD /* AnalyseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyseViewController.h; sourceTree = "<group>"; };
+		D093B3091EA4BFFF008CE3AD /* AnalyseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyseViewController.m; sourceTree = "<group>"; };
+		D0C5DBFE1E9F7E1E0047B9A1 /* GoodsRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsRecordModel.h; sourceTree = "<group>"; };
+		D0C5DBFF1E9F7E1E0047B9A1 /* GoodsRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsRecordModel.m; sourceTree = "<group>"; };
+		D0E7914F1E9F70E900B2E6CB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D0E791501E9F70E900B2E6CB /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D0E791571E9F727E00B2E6CB /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		D0E791581E9F727E00B2E6CB /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		D0E7915A1E9F72EF00B2E6CB /* GoodsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
+		D0E7915B1E9F72EF00B2E6CB /* GoodsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
+		D0E7915D1E9F771C00B2E6CB /* ChooseGoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseGoodsViewController.h; sourceTree = "<group>"; };
+		D0E7915E1E9F771C00B2E6CB /* ChooseGoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseGoodsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,11 +157,14 @@
 		D020EF471E9E131C00FDE5E3 /* DNFDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0E791561E9F726C00B2E6CB /* Common */,
 				D020EF7F1E9E185000FDE5E3 /* Expand */,
 				D020EF7C1E9E174E00FDE5E3 /* Resource */,
 				D020EF7B1E9E174500FDE5E3 /* Class */,
 				D020EF4B1E9E131C00FDE5E3 /* AppDelegate.h */,
 				D020EF4C1E9E131C00FDE5E3 /* AppDelegate.m */,
+				D093B2FE1EA4BD1B008CE3AD /* TabMainViewController.h */,
+				D093B2FF1EA4BD1B008CE3AD /* TabMainViewController.m */,
 				D020EF511E9E131C00FDE5E3 /* Main.storyboard */,
 				D020EF541E9E131C00FDE5E3 /* Assets.xcassets */,
 				D020EF561E9E131C00FDE5E3 /* LaunchScreen.storyboard */,
@@ -177,6 +204,9 @@
 		D020EF7B1E9E174500FDE5E3 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				D093B3061EA4BFDA008CE3AD /* analyse */,
+				D093B3011EA4BEAB008CE3AD /* salse */,
+				D0E7914E1E9F707600B2E6CB /* main */,
 				D020EF7E1E9E179900FDE5E3 /* DBManger */,
 			);
 			name = Class;
@@ -243,6 +273,72 @@
 			children = (
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		D093B3011EA4BEAB008CE3AD /* salse */ = {
+			isa = PBXGroup;
+			children = (
+				D093B3021EA4BEBB008CE3AD /* model */,
+				D093B3031EA4BED1008CE3AD /* SalseViewController.h */,
+				D093B3041EA4BED1008CE3AD /* SalseViewController.m */,
+			);
+			path = salse;
+			sourceTree = "<group>";
+		};
+		D093B3021EA4BEBB008CE3AD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D093B3061EA4BFDA008CE3AD /* analyse */ = {
+			isa = PBXGroup;
+			children = (
+				D093B3071EA4BFEC008CE3AD /* model */,
+				D093B3081EA4BFFF008CE3AD /* AnalyseViewController.h */,
+				D093B3091EA4BFFF008CE3AD /* AnalyseViewController.m */,
+			);
+			path = analyse;
+			sourceTree = "<group>";
+		};
+		D093B3071EA4BFEC008CE3AD /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D0E7914E1E9F707600B2E6CB /* main */ = {
+			isa = PBXGroup;
+			children = (
+				D0E791521E9F70F700B2E6CB /* model */,
+				D0E7914F1E9F70E900B2E6CB /* MainViewController.h */,
+				D0E791501E9F70E900B2E6CB /* MainViewController.m */,
+				D0E7915D1E9F771C00B2E6CB /* ChooseGoodsViewController.h */,
+				D0E7915E1E9F771C00B2E6CB /* ChooseGoodsViewController.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		D0E791521E9F70F700B2E6CB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7915A1E9F72EF00B2E6CB /* GoodsModel.h */,
+				D0E7915B1E9F72EF00B2E6CB /* GoodsModel.m */,
+				D0C5DBFE1E9F7E1E0047B9A1 /* GoodsRecordModel.h */,
+				D0C5DBFF1E9F7E1E0047B9A1 /* GoodsRecordModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		D0E791561E9F726C00B2E6CB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D0E791571E9F727E00B2E6CB /* Model.h */,
+				D0E791581E9F727E00B2E6CB /* Model.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,8 +527,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D020EF4D1E9E131C00FDE5E3 /* AppDelegate.m in Sources */,
+				D093B3001EA4BD1B008CE3AD /* TabMainViewController.m in Sources */,
+				D0C5DC001E9F7E1E0047B9A1 /* GoodsRecordModel.m in Sources */,
+				D0E7915C1E9F72EF00B2E6CB /* GoodsModel.m in Sources */,
+				D0E7915F1E9F771C00B2E6CB /* ChooseGoodsViewController.m in Sources */,
 				D020EF8B1E9E2EFF00FDE5E3 /* DBManger.m in Sources */,
+				D093B30A1EA4BFFF008CE3AD /* AnalyseViewController.m in Sources */,
 				D020EF8E1E9E2FCE00FDE5E3 /* DBManger+main.m in Sources */,
+				D0E791591E9F727E00B2E6CB /* Model.m in Sources */,
+				D093B3051EA4BED1008CE3AD /* SalseViewController.m in Sources */,
+				D0E791511E9F70E900B2E6CB /* MainViewController.m in Sources */,
 				D020EF4A1E9E131C00FDE5E3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,4 +15,12 @@
 #define NSLog(format, ...)
 #endif
 
+#define APPDBPATH  [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"DNFData.db"]
+
+/**
+ 空代码块
+ */
+typedef void(^voidBlock) ();
+
+
 #endif /* AppMacro_h */
