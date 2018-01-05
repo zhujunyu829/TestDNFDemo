@@ -11,7 +11,7 @@
 #import "DBManger.h"
 #import "DBManger+main.h"
 #import "Masonry.h"
-
+#import "MainViewController.h"
 @interface ChooseGoodsViewController ()<UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
@@ -25,7 +25,10 @@
     [super viewDidLoad];
     [self configArr];
     [self configTable];
-
+    self.view.backgroundColor = [UIColor whiteColor];
+    if (!self.chooseBack) {
+        self.navigationItem.title = @"价格记录";
+    }
     // Do any additional setup after loading the view.
 }
 
@@ -42,8 +45,8 @@
     [self.view addSubview:_tableView];
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.and.right.offset(0);
-        make.top.offset(0);
-        make.bottom.offset(0);
+        make.top.offset(64);
+        make.bottom.offset(-50);
     }];
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -62,14 +65,31 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
     
-    cell.textLabel.text = [_dataArr[indexPath.row] name];
+    UILabel *priceLabel = [cell.contentView viewWithTag:1001];
+    if (!priceLabel) {
+        priceLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 160, 44)];
+        priceLabel.right =  cell.width -10;
+        [cell.contentView addSubview:priceLabel];
+        priceLabel.textAlignment = NSTextAlignmentRight;
+        priceLabel.tag = 1001;
+    }
+    priceLabel.text = [NSString  moneyStringFormFloat:[_dataArr[indexPath.row] average]];
+    cell.textLabel.text =  [_dataArr[indexPath.row] name];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (self.chooseBack) {
         self.chooseBack(_dataArr[indexPath.row]);
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        MainViewController  *detailCtr = [MainViewController new];
+        detailCtr.model = _dataArr[indexPath.row];
+        [self pushController:detailCtr];
     }
-    [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)pushController:(UIViewController *)ctr{
+    UINavigationController *nav = (UINavigationController *)self.view.window.rootViewController;
+    [nav pushViewController:ctr animated:YES];
 }
 /*
 #pragma mark - Navigation

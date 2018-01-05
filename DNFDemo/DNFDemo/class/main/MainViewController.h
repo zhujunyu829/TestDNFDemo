@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GoodsModel.h"
 
 @interface MainViewController : UIViewController
 
+@property (nonatomic, retain) GoodsModel *model;
 @end

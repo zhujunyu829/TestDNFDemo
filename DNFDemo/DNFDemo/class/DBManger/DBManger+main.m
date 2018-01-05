@@ -11,21 +11,7 @@
 #import "GoodsRecordModel.h"
 #import "Model.h"
 @implementation DBManger (main)
-+ (NSArray *)getGoods{
-    NSMutableArray *arr = [NSMutableArray new];
-    FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
-    if ([db open]) {
-        FMResultSet *resultSet =   [db executeQuery:@"SELECT  *FROM t_goods"];
-        while([resultSet next]) {
-            GoodsModel *model = [GoodsModel new];
-            model.ID = [[resultSet stringForColumn:@"id"] longLongValue];
-            model.name = [resultSet stringForColumn:@"name"];
-            [arr addObject:model];
-        }
-        [db close];
-    }
-    return arr;
-}
+
 
 + (NSArray *)getRecordByGoods:(long long)goodsID{
     NSMutableArray *arr = [NSMutableArray new];
@@ -43,40 +29,11 @@
         [db close];
     }
     return arr;
-
-
 }
-+ (GoodsModel *)searchGoodsWithName:(NSString *)name{
-    FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
-    if ([db open]) {
-        FMResultSet *resultSet =   [db executeQuery:[NSString stringWithFormat:@"SELECT  *FROM t_goods where name='%@'",name]];
-        GoodsModel *model ;
 
-        if ([resultSet next]) {
-            model = [GoodsModel new];
-            model.ID = [[resultSet stringForColumn:@"id"] longLongValue];
-            model.name = [resultSet stringForColumn:@"name"];
-        }
-        [db close];
-        return model;
-    }
-    return nil;
-}
-+ (BOOL)creactGoods:(GoodsModel *)model{
-    FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
-    if ([db open]) {
-        FMResultSet *resultSet =   [db executeQuery:[NSString stringWithFormat:@"SELECT  *FROM t_goods where name='%@'",model.name]];
-        if ([resultSet next]) {
-            [db close];
-            return YES;
-        }
-       BOOL update = [db executeUpdate:[NSString stringWithFormat:@"insert into t_goods (id, name) values (%0.f,'%@')",[[NSDate date] timeIntervalSince1970],model.name]];
 
-        [db close];
-        return update;
-    }
-    return NO;
-}
+
+
 
 + (BOOL)creactGoodRecord:(GoodsRecordModel *)model{
     FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
@@ -85,6 +42,16 @@
         [db close];
         return update;
     }
+    return NO;
+}
++ (BOOL)deleteRecordByRecordID:(long long)recordID{
+    FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
+    if ([db open]) {
+        BOOL update = [db executeUpdate:[NSString stringWithFormat:@"delete from t_goods_record  where id=%lld",recordID]];
+        [db close];
+        return update;
+    }
+
     return NO;
 }
 @end

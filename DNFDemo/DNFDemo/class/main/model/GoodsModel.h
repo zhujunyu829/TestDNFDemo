@@ -11,5 +11,6 @@
 @interface GoodsModel : Model
 
 @property (nonatomic, assign) long long serviceID;
+@property (nonatomic, assign) float average;
 @end
 

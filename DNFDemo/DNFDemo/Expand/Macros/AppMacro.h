@@ -21,6 +21,13 @@
  空代码块
  */
 typedef void(^voidBlock) ();
+/**
+ *系统版本
+ */
+#define SystemVersion      ([[[UIDevice currentDevice] systemVersion] floatValue])
 
-
+//当前设备的屏幕宽度
+#define DeviceWidth [UIScreen mainScreen].bounds.size.width
+//当前设备的屏幕高度
+#define DeviceHeight [UIScreen mainScreen].bounds.size.height
 #endif /* AppMacro_h */

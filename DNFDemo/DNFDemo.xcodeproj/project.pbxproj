@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		66538B5578749531A92AD8A2 /* libPods-DNFDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E1E0293AB6F98828A59231 /* libPods-DNFDemo.a */; };
+		D00273621EB0713B00A14AF2 /* DBManger+BuyAndSale.m in Sources */ = {isa = PBXBuildFile; fileRef = D00273611EB0713B00A14AF2 /* DBManger+BuyAndSale.m */; };
+		D00273651EB0722700A14AF2 /* SaleAndBuyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D00273641EB0722700A14AF2 /* SaleAndBuyModel.m */; };
 		D020EF4A1E9E131C00FDE5E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D020EF491E9E131C00FDE5E3 /* main.m */; };
 		D020EF4D1E9E131C00FDE5E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D020EF4C1E9E131C00FDE5E3 /* AppDelegate.m */; };
 		D020EF531E9E131C00FDE5E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D020EF511E9E131C00FDE5E3 /* Main.storyboard */; };
@@ -20,6 +22,9 @@
 		D093B3001EA4BD1B008CE3AD /* TabMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D093B2FF1EA4BD1B008CE3AD /* TabMainViewController.m */; };
 		D093B3051EA4BED1008CE3AD /* SalseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D093B3041EA4BED1008CE3AD /* SalseViewController.m */; };
 		D093B30A1EA4BFFF008CE3AD /* AnalyseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D093B3091EA4BFFF008CE3AD /* AnalyseViewController.m */; };
+		D09719C91EA73F64009FB8A0 /* UIColor+RGB.m in Sources */ = {isa = PBXBuildFile; fileRef = D09719C81EA73F64009FB8A0 /* UIColor+RGB.m */; };
+		D09719CC1EA7417C009FB8A0 /* NSString+CheakSize.m in Sources */ = {isa = PBXBuildFile; fileRef = D09719CA1EA7417C009FB8A0 /* NSString+CheakSize.m */; };
+		D0B716D41EA6199F003BCCE7 /* UIView+KGViewExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = D0B716D31EA6199F003BCCE7 /* UIView+KGViewExtend.m */; };
 		D0C5DC001E9F7E1E0047B9A1 /* GoodsRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D0C5DBFF1E9F7E1E0047B9A1 /* GoodsRecordModel.m */; };
 		D0E791511E9F70E900B2E6CB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E791501E9F70E900B2E6CB /* MainViewController.m */; };
 		D0E791591E9F727E00B2E6CB /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E791581E9F727E00B2E6CB /* Model.m */; };
@@ -48,6 +53,10 @@
 		772A945F9263B690BFF0C947 /* Pods-DNFDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNFDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DNFDemo/Pods-DNFDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		AEBF0EEA46FD9B5E265F842A /* Pods-DNFDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNFDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DNFDemo/Pods-DNFDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C8E1E0293AB6F98828A59231 /* libPods-DNFDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DNFDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00273601EB0713B00A14AF2 /* DBManger+BuyAndSale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBManger+BuyAndSale.h"; sourceTree = "<group>"; };
+		D00273611EB0713B00A14AF2 /* DBManger+BuyAndSale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DBManger+BuyAndSale.m"; sourceTree = "<group>"; };
+		D00273631EB0722700A14AF2 /* SaleAndBuyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleAndBuyModel.h; sourceTree = "<group>"; };
+		D00273641EB0722700A14AF2 /* SaleAndBuyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleAndBuyModel.m; sourceTree = "<group>"; };
 		D020EF451E9E131C00FDE5E3 /* DNFDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNFDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D020EF491E9E131C00FDE5E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D020EF4B1E9E131C00FDE5E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +86,12 @@
 		D093B3041EA4BED1008CE3AD /* SalseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalseViewController.m; sourceTree = "<group>"; };
 		D093B3081EA4BFFF008CE3AD /* AnalyseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnalyseViewController.h; sourceTree = "<group>"; };
 		D093B3091EA4BFFF008CE3AD /* AnalyseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnalyseViewController.m; sourceTree = "<group>"; };
+		D09719C71EA73F64009FB8A0 /* UIColor+RGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGB.h"; sourceTree = "<group>"; };
+		D09719C81EA73F64009FB8A0 /* UIColor+RGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGB.m"; sourceTree = "<group>"; };
+		D09719CA1EA7417C009FB8A0 /* NSString+CheakSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CheakSize.m"; sourceTree = "<group>"; };
+		D09719CB1EA7417C009FB8A0 /* NSString+CheakSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CheakSize.h"; sourceTree = "<group>"; };
+		D0B716D21EA6199F003BCCE7 /* UIView+KGViewExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KGViewExtend.h"; sourceTree = "<group>"; };
+		D0B716D31EA6199F003BCCE7 /* UIView+KGViewExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KGViewExtend.m"; sourceTree = "<group>"; };
 		D0C5DBFE1E9F7E1E0047B9A1 /* GoodsRecordModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsRecordModel.h; sourceTree = "<group>"; };
 		D0C5DBFF1E9F7E1E0047B9A1 /* GoodsRecordModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsRecordModel.m; sourceTree = "<group>"; };
 		D0E7914F1E9F70E900B2E6CB /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -228,6 +243,8 @@
 				D020EF8A1E9E2EFF00FDE5E3 /* DBManger.m */,
 				D020EF8C1E9E2FCE00FDE5E3 /* DBManger+main.h */,
 				D020EF8D1E9E2FCE00FDE5E3 /* DBManger+main.m */,
+				D00273601EB0713B00A14AF2 /* DBManger+BuyAndSale.h */,
+				D00273611EB0713B00A14AF2 /* DBManger+BuyAndSale.m */,
 			);
 			path = DBManger;
 			sourceTree = "<group>";
@@ -264,6 +281,12 @@
 		D020EF821E9E19AB00FDE5E3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				D09719CB1EA7417C009FB8A0 /* NSString+CheakSize.h */,
+				D09719CA1EA7417C009FB8A0 /* NSString+CheakSize.m */,
+				D09719C71EA73F64009FB8A0 /* UIColor+RGB.h */,
+				D09719C81EA73F64009FB8A0 /* UIColor+RGB.m */,
+				D0B716D21EA6199F003BCCE7 /* UIView+KGViewExtend.h */,
+				D0B716D31EA6199F003BCCE7 /* UIView+KGViewExtend.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -288,6 +311,8 @@
 		D093B3021EA4BEBB008CE3AD /* model */ = {
 			isa = PBXGroup;
 			children = (
+				D00273631EB0722700A14AF2 /* SaleAndBuyModel.h */,
+				D00273641EB0722700A14AF2 /* SaleAndBuyModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -529,12 +554,17 @@
 				D020EF4D1E9E131C00FDE5E3 /* AppDelegate.m in Sources */,
 				D093B3001EA4BD1B008CE3AD /* TabMainViewController.m in Sources */,
 				D0C5DC001E9F7E1E0047B9A1 /* GoodsRecordModel.m in Sources */,
+				D00273621EB0713B00A14AF2 /* DBManger+BuyAndSale.m in Sources */,
+				D09719CC1EA7417C009FB8A0 /* NSString+CheakSize.m in Sources */,
+				D09719C91EA73F64009FB8A0 /* UIColor+RGB.m in Sources */,
 				D0E7915C1E9F72EF00B2E6CB /* GoodsModel.m in Sources */,
 				D0E7915F1E9F771C00B2E6CB /* ChooseGoodsViewController.m in Sources */,
 				D020EF8B1E9E2EFF00FDE5E3 /* DBManger.m in Sources */,
 				D093B30A1EA4BFFF008CE3AD /* AnalyseViewController.m in Sources */,
 				D020EF8E1E9E2FCE00FDE5E3 /* DBManger+main.m in Sources */,
+				D00273651EB0722700A14AF2 /* SaleAndBuyModel.m in Sources */,
 				D0E791591E9F727E00B2E6CB /* Model.m in Sources */,
+				D0B716D41EA6199F003BCCE7 /* UIView+KGViewExtend.m in Sources */,
 				D093B3051EA4BED1008CE3AD /* SalseViewController.m in Sources */,
 				D0E791511E9F70E900B2E6CB /* MainViewController.m in Sources */,
 				D020EF4A1E9E131C00FDE5E3 /* main.m in Sources */,

@@ -7,7 +7,58 @@
 //
 
 #import "DBManger.h"
+#import "GoodsModel.h"
+
 @implementation DBManger
+
++ (NSArray *)getGoods{
+    NSMutableArray *arr = [NSMutableArray new];
+    FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
+    if ([db open]) {
+        FMResultSet *resultSet =   [db executeQuery:@"SELECT  t.*, (select avg(t1.price) from  t_goods_record t1 where t1.goods_id = t.id)as avg FROM t_goods t "];
+        while([resultSet next]) {
+            GoodsModel *model = [GoodsModel new];
+            model.ID = [[resultSet stringForColumn:@"id"] longLongValue];
+            model.name = [resultSet stringForColumn:@"name"];
+            model.average = [[resultSet stringForColumn:@"avg"] floatValue];
+            [arr addObject:model];
+        }
+        [db close];
+    }
+    return arr;
+}
+
++ (GoodsModel *)searchGoodsWithName:(NSString *)name{
+    FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
+    if ([db open]) {
+        FMResultSet *resultSet =   [db executeQuery:[NSString stringWithFormat:@"SELECT  *FROM t_goods where name='%@'",name]];
+        GoodsModel *model ;
+        
+        if ([resultSet next]) {
+            model = [GoodsModel new];
+            model.ID = [[resultSet stringForColumn:@"id"] longLongValue];
+            model.name = [resultSet stringForColumn:@"name"];
+        }
+        [db close];
+        return model;
+    }
+    return nil;
+}
++ (BOOL)creactGoods:(GoodsModel *)model{
+    FMDatabase *db = [FMDatabase databaseWithPath:APPDBPATH];
+    if ([db open]) {
+        FMResultSet *resultSet =   [db executeQuery:[NSString stringWithFormat:@"SELECT  *FROM t_goods where name='%@'",model.name]];
+        if ([resultSet next]) {
+            [db close];
+            return YES;
+        }
+        BOOL update = [db executeUpdate:[NSString stringWithFormat:@"insert into t_goods (id, name) values (%0.f,'%@')",[[NSDate date] timeIntervalSince1970],model.name]];
+        
+        [db close];
+        return update;
+    }
+    return NO;
+}
 
 + (id)shareManger{
     static DBManger *manger;
@@ -52,6 +103,15 @@
                         @"price":@"decimal",
                         @"time":@"datetime"}
            primaryKey:@"id"];
+    [self createTable:db
+                 name:@"t_buy_sale"
+       WithDictionary:@{
+                        @"goods_id":@"bigint",
+                        @"buy_price":@"decimal",
+                        @"buy_time":@"datetime",
+                        @"sale_price":@"decimal",
+                        @"sale_time":@"datetime"}
+           primaryKey:@"id"];
 }
 
 /**
@@ -86,4 +146,6 @@
         [db executeUpdate: [NSString stringWithFormat:@" alter table %@ add column %@ %@ default %@",tableName,columnName,type,value]];
     }
 }
+
+
 @end

@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"情况分析";
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分析" image:nil tag:2];
 
     // Do any additional setup after loading the view.
 }

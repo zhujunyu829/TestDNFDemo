@@ -21,7 +21,9 @@
     // Override point for customization after application launch.
     NSLog(@"测试");
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [TabMainViewController new];//[[UINavigationController alloc] initWithRootViewController:[MainViewController new]];
+   UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[TabMainViewController new]];
+    self.window.rootViewController =nav;//
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     [DBManger cheakDB];

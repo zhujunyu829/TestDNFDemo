@@ -7,7 +7,7 @@
 //
 
 #import "TabMainViewController.h"
-#import "MainViewController.h"
+#import "ChooseGoodsViewController.h"
 #import "AnalyseViewController.h"
 #import "SalseViewController.h"
 @interface TabMainViewController ()
@@ -22,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self  cofigTabBar];
+    self.view.backgroundColor = [UIColor redColor];
     // Do any additional setup after loading the view.
 }
 
@@ -33,19 +34,22 @@
     if (!ctr) {
         ctr = [UIViewController new];
     }
+    
     return [[UINavigationController alloc] initWithRootViewController:ctr];
 }
 - (void)cofigTabBar{
     _tab = [[UITabBarController alloc] init];
-    UINavigationController *mainCtr = [self configNavigationCtr:[MainViewController new]];
-    UINavigationController *salseCtr = [self configNavigationCtr:[SalseViewController new]];
-    UINavigationController *analyseCtr = [self configNavigationCtr:[AnalyseViewController new]];
-    mainCtr.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分析" image:nil tag:0];
-    salseCtr.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"倒卖" image:nil tag:1];
-    analyseCtr.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"趋势" image:nil tag:2];
+    ChooseGoodsViewController *mainCtr = [ChooseGoodsViewController new];
+    SalseViewController *salseCtr = [SalseViewController new];
+    AnalyseViewController *analyseCtr = [AnalyseViewController new];
+    
+    mainCtr.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"趋势" image:[UIImage imageNamed:@"main_list"] tag:0];
+    salseCtr.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"倒卖" image:[UIImage imageNamed:@"main_buy"] tag:1];
+    analyseCtr.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"分析" image:[UIImage imageNamed:@"main_ analyse"] tag:2];
     _tab.viewControllers = [NSArray arrayWithObjects:mainCtr,salseCtr,analyseCtr,nil];
 
     //_tab.tabBar.items = [NSArray arrayWithObjects:mainItem,salseItem,analyseItem, nil];
+    _tab.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:_tab.view];
 }
 /*

@@ -13,15 +13,9 @@
 @interface DBManger (main)
 
 
-+ (NSArray *)getGoods;
-
-+ (GoodsModel *)searchGoodsWithName:(NSString *)name;
-
 + (NSArray *)getRecordByGoods:(long long)goodsID;
-
-+ (BOOL)creactGoods:(GoodsModel *)model;
 
 + (BOOL)creactGoodRecord:(GoodsRecordModel *)model;
 
-+ (GoodsModel *)searchGoodsWithName:(NSString *)name;
++ (BOOL)deleteRecordByRecordID:(long long)recordID;
 @end

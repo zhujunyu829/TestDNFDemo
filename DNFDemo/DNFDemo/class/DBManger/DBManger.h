@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "FMDB.h"
+@class GoodsModel;
 
 @interface DBManger : NSObject
 
@@ -22,5 +23,11 @@
  数据库检查与更新
  */
 + (void)cheakDB;
+
++ (NSArray *)getGoods;
+
++ (GoodsModel *)searchGoodsWithName:(NSString *)name;
+
++ (BOOL)creactGoods:(GoodsModel *)model;
 
 @end

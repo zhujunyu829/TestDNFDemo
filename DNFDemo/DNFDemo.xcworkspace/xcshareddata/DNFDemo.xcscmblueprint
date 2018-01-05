@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "18FEE1A7FD3BD017D2345C3F59E7AD54D794AF30",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E3F1E4420178CD4088CD3BB55C3E153F30B66FDC" : 9223372036854775807,
+    "18FEE1A7FD3BD017D2345C3F59E7AD54D794AF30" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4DCAA032-8588-4310-99E0-A5F4A60C0558",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E3F1E4420178CD4088CD3BB55C3E153F30B66FDC" : "",
+    "18FEE1A7FD3BD017D2345C3F59E7AD54D794AF30" : "TestDNFDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DNFDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DNFDemo\/DNFDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhujunyu829\/TestDNFDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "18FEE1A7FD3BD017D2345C3F59E7AD54D794AF30"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhujunyu829\/ZJYConnectivity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E3F1E4420178CD4088CD3BB55C3E153F30B66FDC"
+    }
+  ]
+}
